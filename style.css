@@ -12,6 +12,9 @@ body{
 body{
     overflow-x: hidden;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 #main{
     min-height: 100vh;
     width: 100%;
@@ -129,6 +132,7 @@ nav a{
 }
 #home-content #hometext #right-text h2{
     margin-top: 2em;
+    color: #AD2D1A;
 }
 .bagList{
     position: absolute;
@@ -156,4 +160,12 @@ nav a{
 }
 .bagList img{
     width: 70%;
+}
+
+
+/* -------------------------------------------- Second page -------------------------------------------- */
+#about{
+    height: 100vh;
+    width: 100%;
+
 }
