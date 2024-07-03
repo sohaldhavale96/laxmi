@@ -51,9 +51,25 @@ bagList.querySelectorAll('.bag').forEach((bagItem) => {
       const selectedBag = bagAll[bagIndex - 1]; // Get corresponding bag object from array
   
       // Update right-text content
-      rightText.innerHTML = `<h2>${selectedBag.BagName}</h2><img src="${selectedBag.BagImage}" alt="${selectedBag.BagName}">`;
+      rightText.innerHTML = `
+        <img src="${selectedBag.BagImage}" alt="${selectedBag.BagName}">
+        <h2>${selectedBag.BagName}</h2>
+      `;
     });
-  });
+});
+
+
+const rightContentimg = document.querySelector('#right-text img');
+const rightContenth2 = document.querySelector('#right-text h2');
+
+tl.from(rightContentimg,{
+    x:"300px",
+    opacity:0,
+})
+tl.from(rightContenth2,{
+    x:"300px",
+    opacity:0,
+})
   
 
 /*

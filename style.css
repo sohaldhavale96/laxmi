@@ -113,9 +113,22 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#home-content #hometext #right-text div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #home-content #hometext #right-text img{
-    width: 100%;
+    width: 40%;
+}
+#home-content #hometext #right-text h2{
+    margin-top: 2em;
 }
 .bagList{
     position: absolute;
