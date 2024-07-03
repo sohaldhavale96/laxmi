@@ -70,20 +70,21 @@ tl.from(rightContenth2,{
     x:"300px",
     opacity:0,
 })
-  
 
-/*
-const buttonContainer = document.getElementById("button-container");
-
-contentData.forEach((data, index) => {
-  const button = document.createElement("button");
-  button.textContent = `Button ${index + 1}`; // Set button text with index + 1
-  button.id = `button${index + 1}`; // Assign unique IDs
-
-  button.addEventListener("click", function() {
-    displayContent.textContent = contentData[index].content;
-  });
-
-  buttonContainer.appendChild(button);
-});
-*/
+const aboutHead = document.getElementById('AboutUSHEAD')
+const aboutSectionL = document.querySelectorAll('.abtleft');
+const aboutSectionR = document.querySelectorAll('.abtright');
+tl.from(aboutHead,{
+    y:"30px",
+    opacity:0
+})
+tl.from(aboutSectionL,{
+    x:"-900px",
+    stagger:0.2,
+    opacity:0
+})
+tl.from(aboutSectionR,{
+    x:"900px",
+    stagger:0.2,
+    opacity:0
+})
