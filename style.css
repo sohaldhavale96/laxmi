@@ -225,3 +225,77 @@ nav a{
 .gsap-marker{
     z-index: 1000;
 }
+
+/* --------------------------------------- Section 3 --------------------------------------- */
+#products{
+    min-height: 100vh;
+    width: 100%;
+}
+#products h1{
+    text-align: center;
+    margin: 1vw;
+    font-size: 5vw;
+}
+.productCard{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    overflow: hidden;
+    position: relative;
+}
+.productInfoImg{
+    width: 30%;
+    height: 100%;
+    background-color: #FEBD69;
+    overflow: hidden;
+}
+.productInfoText{
+    width: 70%;
+    height: 100%;
+    background-color: #ff9100;
+}
+.productCard #prod-img{
+    position: absolute;
+    left: 16%;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.productCard #prod-img img{
+    width: 90%;
+    transform: rotate(20deg);
+}
+.productInfoText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.productInfoText #bagdetail-1{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.productInfoText #bagdetail-1 h3{
+    font-weight: 100;
+}
+.productInfoText #bagdetail-2{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.productInfoText #bagdetail-1 h1{
+    font-size: 4vw !important;
+    font-weight: 800;
+}
