@@ -230,6 +230,8 @@ nav a{
 #products{
     min-height: 100vh;
     width: 100%;
+    background-color: #FEBD69;
+    padding: 2vw;
 }
 #products h1{
     text-align: center;
@@ -247,19 +249,21 @@ nav a{
     position: relative;
 }
 .productInfoImg{
-    width: 30%;
+    width: 20%;
     height: 100%;
     background-color: #FEBD69;
     overflow: hidden;
 }
 .productInfoText{
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-color: #ff9100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
 }
 .productCard #prod-img{
     position: absolute;
-    left: 16%;
+    left: 8%;
     height: 350px;
     width: 350px;
     overflow: hidden;
@@ -291,15 +295,110 @@ nav a{
     font-weight: 100;
 }
 .productInfoText #bagdetail-2{
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
+    /* background-color: #fff; */
 }
 .productInfoText #bagdetail-1 h1{
     font-size: 4vw !important;
     font-weight: 800;
 }
-.productCard ul li{
+#bagdetail-2 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#bagdetail-2 ul li{
+    width: 70%;
+}
+/* ----------------------------------------------------- Special Product ------------------------------------------ */
+#special{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #131921;
+}
+#special h1{
+    text-align: center;
+    padding: 3vw;
+    font-size: 5vw;
+}
+#plist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 5vw;
+}
+.prod-Card{
+    color: #fff;
+    height:410px;
+    width: 320px;
+    background-image: linear-gradient(45deg,#ffa42e,#b46600);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.spimg{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vw;
+}
+.spimg img{
     width: 80%;
+}
+.spname{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vw;
+}
+/* ----------------------------------Page 5------------------------------------------ */
+#contact{
+    min-height: 50vh;
+    width: 100%;
+    background: linear-gradient(#341434,#131921);
+    color: #fff;
+    padding: 3vw;
+}
+#contact ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+#contact ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+}
+#contact ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#contact ul li img{
+    height: 40px;
+    width: 40px;
 }
